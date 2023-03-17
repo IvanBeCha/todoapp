@@ -1,13 +1,100 @@
+/* Estilo para la página completa */
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  }
+  
+  /* Estilo para el título de la página */
+  h1 {
+  color: #ddd;
+  text-align: center;
+  margin-top: 30px;
+  }
+  
+  /* Estilo para la lista de tareas */
+  ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Estilo para cada tarea individual */
+  li {
+  background-color: #292929;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+  padding: 20px;
+  }
+  
+  /* Estilo para el título de la tarea */
+  li h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #ddd;
+  }
+  
+  /* Estilo para la descripción de la tarea */
+  li p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #bbb;
+  }
+  
+  /* Estilo para el botón de completar tarea */
+  li button.complete {
+  background-color: #007d3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  }
+  
+  /* Estilo para el botón de eliminar tarea */
+  li button.delete {
+  background-color: #a30015;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  }
+
+  /* Estilo para los botones */
+button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Estilo al pasar el cursor sobre los botones */
+button:hover {
+  background-color: #555;
+}
+
+/* Estilo para el cuadro de entrada de texto */
+input[type="text"] {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
